@@ -116,6 +116,12 @@ const Chatbot: React.FC = () => {
                 <button onClick={() => setActiveTab('history')} className="icon-button">
                   <img src="/img/tempo-passado (4).png" alt="Histórico" />
                 </button>
+                <button
+                  onClick={() => window.open('https://oficina-virtual-porto.netlify.app/', '_blank')}
+                  className="icon-button"
+                >
+                  <img src="/img/chamine-de-casa (1).png" alt="Oficina Virtual" />
+                </button>
                 <div className="toggle-buttons">
               <button onClick={() => setIsDarkMode(!isDarkMode)} className="icon-button">
                 <img src={isDarkMode ? '/img/escuro.png' : '/img/claro.png'} alt={isDarkMode ? 'Modo Claro' : 'Modo Escuro'} />
