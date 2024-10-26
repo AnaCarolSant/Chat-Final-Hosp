@@ -227,7 +227,13 @@ input:focus {
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); /* Sombra mais pronunciada */
 }
 
+.icon-group {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os ícones */
+}
+
 .icon-button {
+  
   background: none; /* Remove o fundo do botão */
   border: none; /* Remove a borda do botão */
   cursor: pointer; /* Cursor de ponteiro */
@@ -272,6 +278,7 @@ button.enviar:focus {
   }
 
   .toggle-buttons, .response-toggle {
+    margin: 0 20px;
     justify-content: center;
     width: 100%;
   }

@@ -102,16 +102,23 @@ const Chatbot: React.FC = () => {
           <div className="header">
             <div className="logo-container">
               <img
-                src="public/img/PortoHolding-RGB-H_2.png"
+                src="/img/PortoHolding-RGB-H_2.png"
                 alt="Logo"
                 className={`logo ${isDarkMode ? 'dark-logo' : 'light-logo'}`}
               />
           </div>
             <div className="navigation">
-              <button onClick={() => setActiveTab('history')} className="icon-button">
-                <img src="/img/tempo-passado (4).png" alt="Histórico" />
-              </button>
-            </div>
+              
+              <div className="icon-group">
+                <div>
+                <button className="icon-button" onClick={saveChatHistory}><img src="\img\salvar.png" alt="Salvar" /></button>
+                </div>
+                <button onClick={() => setActiveTab('history')} className="icon-button">
+                  <img src="/img/tempo-passado (4).png" alt="Histórico" />
+                </button>
+              </div>
+              </div>  
+              
             <div className="toggle-buttons">
             <button onClick={() => setIsDarkMode(!isDarkMode)} className="icon-button">
               <img src={isDarkMode ? '/img/escuro.png' : '/img/claro.png'} alt={isDarkMode ? 'Modo Claro' : 'Modo Escuro'} />
@@ -162,7 +169,6 @@ const Chatbot: React.FC = () => {
               placeholder="Digite sua mensagem..."
             />
             <button className="enviar" onClick={handleSend}>Enviar</button>
-            <button className="save" onClick={saveChatHistory}>Salvar Conversa</button>
           </div>
         </>
       ) : (
