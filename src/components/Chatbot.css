@@ -267,10 +267,11 @@ button.enviar:focus {
 }
 
 /* Responsividade */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .header {
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .logo {

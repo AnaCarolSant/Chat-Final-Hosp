@@ -116,14 +116,13 @@ const Chatbot: React.FC = () => {
                 <button onClick={() => setActiveTab('history')} className="icon-button">
                   <img src="/img/tempo-passado (4).png" alt="Histórico" />
                 </button>
+                <div className="toggle-buttons">
+              <button onClick={() => setIsDarkMode(!isDarkMode)} className="icon-button">
+                <img src={isDarkMode ? '/img/escuro.png' : '/img/claro.png'} alt={isDarkMode ? 'Modo Claro' : 'Modo Escuro'} />
+              </button>
+              </div>
               </div>
               </div>  
-              
-            <div className="toggle-buttons">
-            <button onClick={() => setIsDarkMode(!isDarkMode)} className="icon-button">
-              <img src={isDarkMode ? '/img/escuro.png' : '/img/claro.png'} alt={isDarkMode ? 'Modo Claro' : 'Modo Escuro'} />
-            </button>
-          </div>
             <div className="response-toggle">
               <span>
                 {isComplexResponse ? 'Respostas Detalhadas' : 'Respostas Simples'}
