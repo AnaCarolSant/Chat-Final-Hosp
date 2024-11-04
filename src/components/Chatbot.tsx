@@ -117,7 +117,7 @@ const Chatbot: React.FC = () => {
                   <img src="/img/tempo-passado (4).png" alt="Histórico" />
                 </button>
                 <button
-                  onClick={() => window.open('https://oficina-virtual-porto.netlify.app/', '_blank')}
+                  onClick={() => window.location.href = 'https://challenge-quarta-sprint.vercel.app'}
                   className="icon-button"
                 >
                   <img src="/img/chamine-de-casa (1).png" alt="Oficina Virtual" />
